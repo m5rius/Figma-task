@@ -1,0 +1,57 @@
+@use 'variables.scss';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+.container{
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    
+
+.button{
+    display: flex;
+    background: variables.$green;
+    justify-content: space-between;
+    color: variables.$almost-white;
+    text-transform: uppercase;
+    padding: 28px;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: linear-gradient(0.3turn, #647b64e3, #66ac66e5);
+    border-radius: 15px;
+}
+
+.heading span{
+    color: variables.$yellow;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.heading h2{
+    color: variables.$green;
+    font-size: 41px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 17px;
+}
